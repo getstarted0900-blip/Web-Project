@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - JK Tour</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- HEADER: menu button (mobile only), company name, greeting -->
+    <header class="top-bar">
+        <button id="menuBtn" class="menu-btn" onclick="toggleMenu()">&#9776;</button>
+        <span class="logo">JK TOUR</span>
+        <span class="hello">Hello, Traveler</span>
+    </header>
+
+    <div class="page">
+
+        <!-- SIDEBAR MENU (becomes the full-screen menu on mobile) -->
+        <aside id="sidebar" class="sidebar">
+            <nav>
+            <a href="index.html">Home</a>
+            <a href="about-us.html">About Us</a>
+            <a href="contact.html" class="active">Contact Us</a>
+            <a href="services.html">Services</a>
+            </nav>
+        </aside>
+
+        <main>
+            <section>
+                <h1>Contact Us</h1>
+                <p>Have a question or ready to plan a trip? Fill in the form and we will get back to you.</p>
+
+                <form id="contactForm" onsubmit="return sendForm()">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone">
+
+                    <label for="service">Service</label>
+                    <select id="service" name="service">
+                        <option>Tour Packages</option>
+                        <option>Transportation</option>
+                        <option>Hotel Booking</option>
+                        <option>Travel Planning</option>
+                    </select>
+
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+
+                    <button type="submit" class="button">Send Message</button>
+                    <p id="formMessage" class="form-message"></p>
+                </form>
+            </section>
+        </main>
+    </div>
+
+    <!-- FOOTER: menu, contact information, social icons -->
+    <footer>
+        <div class="footer-box">
+            <h3>Menu</h3>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about-us.html">About Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="services.html">Services</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-box">
+            <h3>Contact</h3>
+            <ul>
+                <li><a href="tel:+9779752104580">9752104580</a></li>
+                <li><a href="mailto:jktours@gmail.com">jktours@gmail.com</a></li>
+                <li>Kathmandu, Old Baneshwor</li>
+            </ul>
+        </div>
+
+        <div class="footer-box">
+            <h3>Follow Us</h3>
+            <div class="social">
+                <a href="https://facebook.com" target="_blank"><img src="./image/facebook.png" alt="Facebook"></a>
+                <a href="https://instagram.com" target="_blank"><img src="./image/instagram.png" alt="Instagram"></a>
+                <a href="https://youtube.com" target="_blank"><img src="./image/youtube.png" alt="YouTube"></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

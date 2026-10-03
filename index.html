@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - JK Tour</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+    
+    <header class="top-bar">
+        <button id="menuBtn" class="menu-btn" onclick="toggleMenu()">&#9776;</button>
+        <span class="logo">JK TOUR</span>
+        <span class="hello">Hello, Traveler</span>
+    </header>
+
+    <div class="page">
+
+       
+        <aside id="sidebar" class="sidebar">
+            <nav>
+            <a href="./index.html" class="active">Home</a>
+            <a href="./about-us.html">About Us</a>
+            <a href="./contact.html">Contact Us</a>
+            <a href="./services.html">Services</a>
+            </nav>
+        </aside>
+
+        <main>
+            <section>
+                <h1>JK Tour</h1>
+                <h2>Tour With Us</h2>
+                <hr>
+                <p>JK Tour is a trusted travel company dedicated to making every journey comfortable, memorable, and enjoyable. We provide reliable tour and travel services, helping customers explore beautiful destinations with ease. From trip planning to transportation and travel assistance, JK Tour focuses on quality service, customer satisfaction, and unforgettable travel experiences.</p>
+            </section>
+
+            <section>
+                <h2>Our Journey</h2>
+                <hr>
+                <img src="./image/cat.jpg" alt="Video preview" class="preview">
+                <br>
+                <button class="button" onclick="openVideo()">&#9654; Play Video</button>
+
+                <h3>Beautiful places to visit</h3>
+                <div class="gallery">
+                    <img src="./image/view.webp" alt="Sunset view">
+                    <img src="./image/photoclicking man.webp" alt="Person taking photos">
+                    <img src="./image/statue.webp" alt="Statue">
+                </div>
+            </section>
+
+            
+            <div id="videoModal" class="modal">
+                <div class="modal-content">
+                    <button class="close-btn" onclick="closeVideo()">&#10005;</button>
+                    <video id="myVideo" src="./video/Gorillaz-Clint Eastwood.mp4" controls></video>
+                </div>
+            </div>
+        </main>
+    </div>
+
+   
+    <footer>
+        <div class="footer-box">
+            <h3>Menu</h3>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about-us.html">About Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="services.html">Services</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-box">
+            <h3>Contact</h3>
+            <ul>
+                <li><a href="tel:+9779752104580">9752104580</a></li>
+                <li><a href="mailto:jktours@gmail.com">jktours@gmail.com</a></li>
+                <li>Kathmandu, Old Baneshwor</li>
+            </ul>
+        </div>
+
+        <div class="footer-box">
+            <h3>Follow Us</h3>
+            <div class="social">
+                <a href="https://facebook.com" target="_blank"><img src="./image/facebook.png" alt="Facebook"></a>
+                <a href="https://instagram.com" target="_blank"><img src="./image/instagram.png" alt="Instagram"></a>
+                <a href="https://youtube.com" target="_blank"><img src="./image/youtube.png" alt="YouTube"></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
